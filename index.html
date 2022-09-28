@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Board</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <div class="buttons">
+            <div class="buttons-group">
+                <h2>Animation speed:</h2>
+                <button class="btn" data-setting="speed" data-speed="40">slow</button>
+                <button class="btn" data-setting="speed" data-speed="3">normal</button>
+                <button class="btn" data-setting="speed" data-speed="0.5">fast</button>
+            </div>
+
+            <div class="buttons-group">
+                <h2>Color range:</h2>
+                <button class="btn" data-setting="color" data-color-range="0">red</button>
+                <button class="btn" data-setting="color" data-color-range="100">green</button>
+                <button class="btn" data-setting="color" data-color-range="200">blue</button>
+                <button class="btn" data-setting="color" data-color-range="360">normal</button>
+            </div>
+
+        </div>
+
+        <div class="slider-box">
+            <input type="range" value="70" min="0" max="100" id="slider">
+            <p>Saturation: <span class="slider-info">70</span>%</p>
+        </div>
+        <div class="box">
+
+        </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

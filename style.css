@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #333;
+	flex-direction: column;
+}
+
+
+h2 {
+	margin-bottom: 1em;
+	color: #fff;
+	text-align: center;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+
+@media(max-width: 500px){
+	h2{
+		font-size: 0.9rem;	}
+}
+
+.buttons {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 3em;
+}
+
+.buttons-group {
+	margin: 2rem 3em;
+}
+
+@media(max-width: 1050px){
+	.buttons-group{
+		display: flex;
+		flex-direction: column;
+	}
+}
+@media(max-width: 500px){
+	.buttons-group{
+	margin-left: 10px;
+	}
+}
+
+
+
+.btn {
+	padding: 1em 2em;
+	margin: 0 1em;
+	text-transform: uppercase;
+	border: 1px solid #fff;
+	color: #fff;
+	border-radius: 6px;
+	background: none;
+	cursor: pointer;
+	transition: color 0.3s, background-color 0.3s;
+}
+
+@media(max-width: 1050px){
+	.btn{
+		margin-top: 8px;
+	}
+}
+
+@media(max-width: 500px){
+	.btn{
+		padding: 0.7em 1.5em;
+	}
+}
+@media(max-width: 400px){
+	.btn{
+		padding: 0.6em 1.2em;
+	}
+}
+
+
+.btn:hover {
+	color: #000;
+	background-color: #fff;
+}
+
+.slider-box {
+	margin-bottom: 2em;
+	color: #fff;
+	font-size: 18px;
+}
+
+
+
+#slider {
+	margin-bottom: .5em;
+	width: 400px;
+}
+
+@media(max-width: 550px){
+	#slider{
+	width: 300px;
+	}
+}
+@media(max-width: 400px){
+	#slider{
+	width: 200px;
+	}
+}
+
+.box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 1000px;
+}
+@media(max-width: 1050px){
+	.box{
+		width: 700px;
+	}
+}
+@media(max-width: 700px){
+	.box{
+		width: 500px;
+
+	}
+}
+@media(max-width: 530px){
+	.box{
+		width: 350px;
+
+	}
+}
+@media(max-width: 400px){
+	.box{
+		width: 250px;
+
+	}
+}
+
+.square {
+	margin: 3px;
+	height: 32px;
+	width: 32px;
+	border: 1px solid #000;
+	border-radius: 6px;
+	transition-property: background-color;
+	transition-duration: 3s;
+}
+
+.square:hover {
+	transition-duration: 0s!important;
+}
